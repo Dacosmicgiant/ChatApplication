@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+    <classpathentry kind="lib" path="lib/javafx.controls.jar"/>
+    <classpathentry kind="lib" path="lib/javafx.fxml.jar"/>
+    <classpathentry kind="lib" path="lib/gson-2.8.9.jar"/>
+    <!-- Add other JavaFX modules if needed -->
+    <classpathentry kind="src" path="src"/>
+    <classpathentry kind="output" path="bin"/>
+</classpath>
