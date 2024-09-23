@@ -1,40 +1,49 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "compile-client",
-        "type": "shell",
-        "command": "javac",
-        "args": [
-          "--module-path",
-          "D:/VEDANT/repos/javafx-sdk-17.0.12/lib",
-          "--add-modules",
-          "javafx.controls,javafx.fxml",
-          "-d",
-          "bin",
-          "src/com/chatapp/client/*.java",
-          "src/com/chatapp/common/*.java"
-        ],
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        }
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile Client",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "--module-path",
+        "lib/javafx-sdk-17.0.12/lib",
+        "--add-modules",
+        "javafx.controls,javafx.fxml",
+        "-d",
+        "bin",
+        "-cp",
+        "lib/gson-2.8.9.jar",
+        "src/com/chatapp/client/*.java",
+        "src/com/chatapp/common/*.java"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
       },
-      {
-        "label": "compile-server",
-        "type": "shell",
-        "command": "javac",
-        "args": [
-          "-d",
-          "bin",
-          "src/com/chatapp/server/*.java",
-          "src/com/chatapp/common/*.java"
-        ],
-        "group": {
-          "kind": "build",
-          "isDefault": false
-        }
-      }
-    ]
-  }
-  
+      "problemMatcher": [
+        "$javac"
+      ]
+    },
+    {
+      "label": "Compile Server",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "-d",
+        "bin",
+        "-cp",
+        "lib/gson-2.8.9.jar",
+        "src/com/chatapp/server/*.java",
+        "src/com/chatapp/common/*.java"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": [
+        "$javac"
+      ]
+    }
+  ]
+}
