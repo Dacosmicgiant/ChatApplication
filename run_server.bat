@@ -11,5 +11,5 @@ if errorlevel 1 (
 )
 
 REM Run Server
-java -cp ".;lib\gson-2.8.9.jar" com.chatapp.server.ChatServer
+java -cp "bin;lib\gson-2.8.9.jar" com.chatapp.server.ChatServer
 pause

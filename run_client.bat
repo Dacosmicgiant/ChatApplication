@@ -11,5 +11,5 @@ if errorlevel 1 (
 )
 
 REM Run Client
-java --module-path lib\javafx-sdk-17.0.12\lib --add-modules javafx.controls,javafx.fxml -cp ".;lib\gson-2.8.9.jar" com.chatapp.client.ChatGUI
+java --module-path lib\javafx-sdk-17.0.12\lib --add-modules javafx.controls,javafx.fxml -cp "bin;lib\gson-2.8.9.jar" com.chatapp.client.ChatGUI
 pause
