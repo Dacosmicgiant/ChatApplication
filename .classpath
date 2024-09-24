@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+    <!-- Specifies the JRE system library used for the project -->
     <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+    
+    <!-- Includes the JavaFX controls library for UI components -->
     <classpathentry kind="lib" path="lib/javafx.controls.jar"/>
+    
+    <!-- Includes the JavaFX FXML library for handling FXML files -->
     <classpathentry kind="lib" path="lib/javafx.fxml.jar"/>
+    
+    <!-- Includes the Gson library for JSON parsing and serialization -->
     <classpathentry kind="lib" path="lib/gson-2.8.9.jar"/>
-    <!-- Add other JavaFX modules if needed -->
+    
+    <!-- Add other JavaFX modules if needed for additional functionality -->
+    
+    <!-- Specifies the source folder for the project -->
     <classpathentry kind="src" path="src"/>
+    
+    <!-- Specifies the output folder where compiled class files will be stored -->
     <classpathentry kind="output" path="bin"/>
 </classpath>
